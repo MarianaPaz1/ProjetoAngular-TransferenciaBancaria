@@ -1,0 +1,45 @@
+<h3 class="text-center m-3 bg.
+Secondary"> Cadastro de Clientes</h3>
+
+<div class="container">
+  <div class="col">
+    <form action="">
+      <div class="mb-1">
+        <label for="form-label"> Nome do cliente</label>
+              <input
+          [(ngModel)]="transferencia.nomeCliente"
+          type="text"
+          class="form-control"
+          name="nomeCliente"
+          placeholder="Nome completo do Cliente"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="form-label"> Valor da transferencia</label>
+        <input
+          [(ngModel)]="transferencia.valor"
+          type="text"
+          class="form-control"
+          name="valor"
+          placeholder="Valor da Transferência"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="form-label"> Cadastrar novo Cliente</label>
+        <input
+          [(ngModel)]="transferencia.contaCliente"
+          type="text"
+          class="form-control"
+          name="contaCliente"
+          placeholder="Conta do Cliente"
+        />
+      </div>
+      <div class="mt-5">
+        <button (click)="cadastrar()" class="btn btn-warning mb-1">
+          Adicionar
+        </button>
+      </div>
+       </form>
+  </div>
+ </div>
+
